@@ -2,8 +2,8 @@ function tasksorter(a,b) {
     //if both are done
 if(a.done && b.done) {
     //if a is completed at recent time than b then a is smaller than b
-    if(a.completedAt >  b.completedAt) return -1
-    else return 1
+    if(a.completedAt >  b.completedAt) return 1
+    else return -1
 }
 //if both are not done
 else if(!a.done && !b.done) {
