@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# React Todo List : Ashish Pankhedkar [2020A7PS0126G]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is done as a part of assesment for the ODE Screening. 
 
-## Available Scripts
+The React Todo List project is a simple application that allows users to create and manage their todos. It includes features such as adding todos, marking them as completed, and persisting the todo list state using local storage. Additionally, there are stretch goals like deleting todos and sorting based on timestamps.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. Toggle Todo State
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clicking on a todo item toggles its "checked" state, allowing users to mark todos as completed or active.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Persistent Data Storage
 
-### `npm test`
+The todo list state is saved and loaded from local storage. This ensures that users can close and reopen the application without losing their todo items.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Auto-Sort Checked Items
 
-### `npm run build`
+Checked items automatically sink to the bottom of the list, providing a visual separation between active and completed todos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Stretch Goals
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Todo Deletion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Hovering over a todo reveals an "X" on the far right side. Clicking the "X" removes the todo from the list, allowing users to delete unwanted todos.
 
-### `npm run eject`
+### 5. Timestamps for Sorting
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Hidden timestamps (created_at, completed_at) are added to todos for sorting purposes:
+   - Active todos are sorted by created_at in descending order.
+   - Completed todos are sorted by completed_at in ascending order.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react-todo-list.git
+   cd react-todo-list
+   ```
+2. Install Dependencies
+```bash 
+npm install 
+```
+3. Start the Server 
+```bash
+npm start
+```
